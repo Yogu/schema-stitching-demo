@@ -10,7 +10,7 @@ function getAuthTokenFromGraphQLContext(context: any) {
   }
   // console.log('context', context);
   console.log('headers', context.headers);
-  return context.headers['Authentication'];
+  return context.headers['authorization'];
 }
 
 class AuthForwardingGraphQLClient extends HttpGraphQLClient {
